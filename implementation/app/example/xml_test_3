@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tasks>
+  <task class="appointment">
+    <priority>LOW</priority>
+    <description>Simple description</description>
+    <status>PLANNED</status>
+    <title>Simple title</title>
+    <color>BLUE</color>
+    <type>BUSINESS</type>
+    <time>
+      <hour>3</hour>
+      <minute>45</minute>
+    </time>
+    <date>
+      <day>5</day>
+      <month>12</month>
+      <year>2023</year>
+    </date>
+  </task>
+</tasks>

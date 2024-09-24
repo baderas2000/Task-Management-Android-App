@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.NotificationsSettingsActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:ignore="MissingConstraints">
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="377dp"
+                android:layout_height="614dp"
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notify me when:"
+                    android:textColor="#04C9C4"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_taskCreated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Task created" />
+
+                <LinearLayout
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TableRow
+                        android:layout_width="251dp"
+                        android:layout_height="82dp"
+                        android:layout_marginLeft="30dp">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checkedButton="@+id/radioGroup_taskCreated">
+
+                            <RadioButton
+                                android:id="@+id/radioButton_taskCreated_popUp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="?android:attr/listChoiceIndicatorMultiple"
+                                android:text="Pop-up" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton_taskCreated_email"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="?android:attr/listChoiceIndicatorMultiple"
+                                android:text="Email" />
+                        </RadioGroup>
+
+                    </TableRow>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editText_taskCreated_notificationContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:minHeight="48dp"
+                    android:text="Add notification content" />
+
+                <androidx.constraintlayout.widget.Barrier
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:barrierDirection="top" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_taskUpdated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Task updated" />
+
+                <LinearLayout
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TableRow
+                        android:layout_width="251dp"
+                        android:layout_height="82dp"
+                        android:layout_marginLeft="30dp">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checkedButton="@+id/radioGroup_taskUpdated">
+
+                            <RadioButton
+                                android:id="@+id/radioButton_taskUpdated_popUp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="?android:attr/listChoiceIndicatorMultiple"
+                                android:text="Pop-up" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton_taskUpdated_email"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="?android:attr/listChoiceIndicatorMultiple"
+                                android:text="Email" />
+                        </RadioGroup>
+                    </TableRow>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editText_taskUpdated_notificationContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:minHeight="48dp"
+                    android:text="Add notification content" />
+
+                <androidx.constraintlayout.widget.Barrier
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:barrierDirection="top" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_taskDeleted"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Task deleted" />
+
+                <LinearLayout
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TableRow
+                        android:layout_width="251dp"
+                        android:layout_height="82dp"
+                        android:layout_marginLeft="30dp">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checkedButton="@+id/radioGroup_taskDeleted">
+
+                            <RadioButton
+                                android:id="@+id/radioButton_taskDeleted_popUp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="?android:attr/listChoiceIndicatorMultiple"
+                                android:text="Pop-up" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton_taskDeleted_email"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="?android:attr/listChoiceIndicatorMultiple"
+                                android:text="Email" />
+                        </RadioGroup>
+                    </TableRow>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editText_taskDeleted_notificationContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:minHeight="48dp"
+                    android:text="Add notification content" />
+
+                <androidx.constraintlayout.widget.Barrier
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:barrierDirection="top" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_appointment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Appointment is coming up" />
+
+                <LinearLayout
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TableRow
+                        android:layout_width="251dp"
+                        android:layout_height="82dp"
+                        android:layout_marginLeft="30dp">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checkedButton="@+id/radioGroup_appointment">
+
+                            <RadioButton
+                                android:id="@+id/radioButton_appointment_popUp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="?android:attr/listChoiceIndicatorMultiple"
+                                android:text="Pop-up" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton_appointment_email"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="?android:attr/listChoiceIndicatorMultiple"
+                                android:text="Email" />
+                        </RadioGroup>
+                    </TableRow>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editText_appointment_notificationContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:minHeight="48dp"
+                    android:text="Add notification content" />
+
+                <Button
+                    android:id="@+id/saveNotificationSettingsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#04C9C4"
+                    android:text="Save changes" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

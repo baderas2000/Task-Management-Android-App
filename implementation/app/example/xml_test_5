@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <task class="appointment">
+    <priority>LOW</priority>
+    <description>Simple description</description>
+    <status>PLANNED</status>
+    <title>Simple title</title>
+    <color>BLUE</color>
+    <type>BUSINESS</type>
+    <time>
+      <hour>3</hour>
+      <minute>45</minute>
+    </time>
+	<location>Simple address</location>
+    <date>
+      <day>5</day>
+      <month>12</month>
+      <year>2023</year>
+    </date>
+  </task>
+  <task class="checklist">
+    <priority>HIGH</priority>
+    <description>Not simple description</description>
+    <status>DONE</status>
+    <title>Complicated title</title>
+    <color>GREEN</color>
+    <type>PRIVATE</type>
+    <time>
+      <hour>12</hour>
+      <minute>15</minute>
+    </time>
+    <deadline>
+      <day>1</day>
+      <month>1</month>
+      <year>2019</year>
+    </deadline>
+  </task>
+</tasks>

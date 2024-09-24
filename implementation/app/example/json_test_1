@@ -1,0 +1,41 @@
+{
+	"tasks" : [
+		{
+			"class" : "appointment",
+			"priority" : "LOW",
+			"description" : "Description",
+			"status": "PLANNED",
+			"title" : "Simple title",
+			"color" : "BLUE",
+			"type" : "BUSINESS",
+			"time" : {
+				"hour" : 3,
+				"minute" : 45
+			},
+			"location" : "Simple address",
+			"date" : {
+				"day" : 5,
+				"month" : 12,
+				"year" : 2023
+			}
+		},
+		{
+			"class" : "checklist",
+			"priority" : "HIGH",
+			"description" : "Not simple description",
+			"status": "DONE",
+			"title" : "Complicated title",
+			"color" : "GREEN",
+			"type" : "PRIVATE",
+			"time" : {
+				"hour" : 12,
+				"minute" : 15
+			},
+			"deadline" : {
+				"day" : 1,
+				"month" : 1,
+				"year" : 2019
+			}
+		}
+	]
+}
